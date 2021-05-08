@@ -4,6 +4,12 @@ function find(){
     return db("trolls").select("id", "troll")
 }
 
+function findRandom(){
+    return db("trolls")
+    .select("troll")
+    .orderByRaw("random()")
+    .limit(1)
+}
 function findById(id){
     return db("trolls")
     .select("id", "troll")
@@ -38,5 +44,6 @@ module.exports = {
     findById,
     add,
     remove,
-    update
+    update,
+    findRandom
 }

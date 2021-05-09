@@ -6,19 +6,13 @@ exports.seed = function(knex){
         // Inserts the seeds to the Trolls db
         return knex("trolls").insert([
             {
-                troll: "This is troll 1"
+                troll: "Head on over to https://www.twitch.tv/the_bearded_reaper_ -- Tell em the dude who should have a 4 Loko sponsorship sent ya."
             },
             {
-                troll: "This is troll 2"
+                troll: "Head on over to https://www.twitch.tv/the_bearded_reaper_ -- Tell em the dude with the much better beard sent you!"
             },
             {
-                troll: "This is troll 3"
-            },
-            {
-                troll: "This is troll 4"
-            },
-            {
-                troll: "This is troll 5"
+                troll: "Do you like Canadians? I'm sure you do and https://www.twitch.tv/the_bearded_reaper_ is a Canadian. If you want to see worse gun play, check him out and tell em that k0k0 sent ya."
             },
         ]);
     });

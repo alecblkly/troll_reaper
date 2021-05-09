@@ -14,10 +14,10 @@ router.get("/", (req, res) => {
       });
   });
 
-  router.get("/random", (req, res) => {
+  router.get("/random", async (req, res) => {
     Trolling.findRandom()
-      .then(troll => {
-        res.status(200).json(troll);
+      .then(obj => {
+        res.status(200).json(obj[0].troll)
       })
       .catch(error => {
         res
